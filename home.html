@@ -15,38 +15,41 @@
             width: 400px;
         }
 
-        .description {
+        table.description {
             width: 400px;
-            height: 300px;
+            height: 250px;
             padding: 20px;
             border: 1px solid black;
+            margin: 0 auto; /*applying this will move the object centrally within it's parent container*/
         }
     </style>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <!-- Title of the Restaurant -->
-    <div>
-        <h1 align="center">Meat For Men</h1>
-    </div>
+    <header>
+        <h1>Meat For Men</h1>
+    </header>
     <!-- <hr> seperates content by creating a horizontal rule -->
     <hr/>
     <!-- Navigation -->
     <div>
         <table>
             <tr>
-                <td style="width:30%;text-align:center;"><a href="home.html">Home</a></td>
-                <td style="width:30%;text-align:center;"><a href="menu.html">Menu</a></td>
-                <td style="width:30%;text-align:center;"><a href="contactUs.html">Contact Us</a></td>
+                <td class="navigation"><a href="home.html">Home</a></td>
+                <td class="navigation"><a href="menu.html">Menu</a></td>
+                <td class="navigation"><a href="contactUs.html">Contact Us</a></td>
             </tr>
         </table>
     </div>
     <hr/>
     <!-- Restaurant -->
     <div>
-        <p align="center"><img src="images/hotdog.jpg" /></p>
+        <!-- Used inline style for image -->
+        <p style="text-align:center"><img src="images/hotdog.jpg" /></p>
         <p>
-            <table style="width:400px;height:250px;border:1px solid black;padding:20px;" align="center">
+            <table class="description">
                 <td>
                     Restaurant Description: <br/>
                     <p>Are you a meat guy? Then this is the place for you. We have all the meat that you can think of from high
@@ -70,9 +73,9 @@
     <!-- Address and Phone Number -->
     <footer>
         <address>
-            <h3 align="center">Wherethemeatis Louisville, KY 40245</h3>
+            <h3>Wherethemeatis Louisville, KY 40245</h3>
         </address>
-        <h3 align="center">(502)010-0101</h3>
+        <h3>(502)010-0101</h3>
     </footer>
 </body>
 

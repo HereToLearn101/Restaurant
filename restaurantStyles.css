@@ -1,0 +1,9 @@
+header, footer {
+    text-align: center;
+    background-color: lightgrey;
+}
+
+td.navigation {
+    width: 30%;
+    text-align: center;
+}

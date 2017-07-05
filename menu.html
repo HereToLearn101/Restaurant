@@ -4,54 +4,61 @@
 <head>
     <title>Ted Moso - Restaurant Menu</title>
     <style>
-        td {
+        td.menu {
             text-align: center;
             width: 30%;
         }
+
+        table.menu {
+            width: 100%;
+        }
     </style>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <h1 align="center">Meat For Men</h1>
+    <header>
+        <h1>Meat For Men</h1>
+    </header>
     <hr/>
     <div>
         <table>
             <tr>
-                <td style="width:30%;text-align:center;"><a href="home.html">Home</a></td>
-                <td style="width:30%;text-align:center;"><a href="menu.html">Menu</a></td>
-                <td style="width:30%;text-align:center;"><a href="contactUs.html">Contact Us</a></td>
+                <td class="navigation"><a href="home.html">Home</a></td>
+                <td class="navigation"><a href="menu.html">Menu</a></td>
+                <td class="navigation"><a href="contactUs.html">Contact Us</a></td>
             </tr>
         </table>
     </div>
     <hr/>
     <div>
-        <table style="width: 100%;">
+        <table class="menu">
             <tr>
-                <td>
+                <td class="menu">
                     <h2>Burger and Fries</h2>
                     An American Classic!<br/> Your choice - with or without cheese<br/> Pickle, onion, tomoto and lettuce<br/>                    Served with our famous thick cut french fries<br/> $7.95
                 </td>
-                <td>
+                <td class="menu">
                     <h2>Hot Dog and Chips</h2>
                     A Summber Classic!<br/> Your choice - white or wheat bun<br/> Relish, mustard, and ketchup<br/> Served
                     with our house-made chips<br/> $7.95
                 </td>
-                <td>
+                <td class="menu">
                     <h2>Italian Sausage</h2>
                     An All-Time Favorite!<br/> Your choice - mild or spicy<br/> Cole Slaw<br/> Served with garlic mashers<br/>                    $7.95
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="menu">
                     <h2>Tenderloin Sandwich and Chips</h2>
                     Really Hits the Spot!<br/> Plain or Sesame Seed Bun<br/> Pickle, onion, tomato, and lettuce<br/> Served
                     with our house-made chips<br/> $7.95
                 </td>
-                <td>
+                <td class="menu">
                     <h2>House Salad</h2>
                     On the Lighter Side<br/> Your choice - with or without cheese<br/> Iceberg lettuce, tomatoes, peppers<br/>                    Thousand Island or Ranch Dressing<br/> Served with a dinner roll<br/> $7.95
                 </td>
-                <td>
+                <td class="menu">
                     <h2>Brisket Sandwich and Fries</h2>
                     A Taste of Texas!<br/> Smoked Brisket on thick-cut Texas<br/> Toast
                     <br/> Cole Slaw<br/> Served with our famous thich-cut french fries<br/> $7.95
@@ -62,9 +69,9 @@
     <hr/>
     <footer>
         <address>
-            <h3 align="center">Wherethemeatis Louisville, KY 40245</h3>
+            <h3>Wherethemeatis Louisville, KY 40245</h3>
         </address>
-        <h3 align="center">(502)010-0101</h3>
+        <h3>(502)010-0101</h3>
     </footer>
 </body>
 
