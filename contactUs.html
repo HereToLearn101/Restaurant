@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ted Moso - Restaurant Menu</title>
+    <style>
+        .alignLabel {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Meat For Men</h1>
+    <hr/>
+    <div>
+        <table>
+            <tr>
+                <td style="width:30%;text-align:center;"><a href="home.html">Home</a></td>
+                <td style="width:30%;text-align:center;"><a href="menu.html">Menu</a></td>
+                <td style="width:30%;text-align:center;"><a href="contactUs.html">Contact Us</a></td>
+            </tr>
+        </table>
+    </div>
+    <hr/>
+    <div>
+        <form action="#" method="POST">
+            <table width="30%">
+                <tr>
+                    <td class="alignLabel"><label id="NameLabel" for="Name">First Name: </label></td>
+                    <td><input id="Name" name="Name" type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="alignLabel"><label id="EmailLabel" for="Email">Email: </label></td>
+                    <td><input id="Email" name="Email" type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="alignLabel"><label id="PhoneLabel" for="Phone">Last Name: </label></td>
+                    <td><input id="Phone" name="Phone" type="text" /></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td class="alignLabel"><label id="ReasonLabel">Reason: </label></td>
+                    <td>
+                        <select>
+                            <option value="Catering">Catering:</option>
+                            <option value="PrivateParty">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="alignLabel" style="vertical-align: top;"><label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label></td>
+                    <td><textarea id="AdditionalInfo" name="AdditionalInfo" rows="4" cols="25"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="alignLabel"><label>Have you been to the restaurant?</label></td>
+                    <td><input id="No" name="No" type="radio"/>
+                        <label id="NoLabel" for="No">No</label>
+                        <input id="Yes" name="Yes" type="radio"/>
+                        <label id="YesLabel" for="Yes">Yes</label></td>
+                </tr>
+                <tr>
+                    <td class="alignLabel" rowspan="2" style="vertical-align: top;"><label>Best days to contact you:</label></td>
+                    <td><input id="M" name="M" type="checkbox" />
+                    <label id="MLabel" for="M">M</label>
+                    <input id="T" name="T" type="checkbox" />
+                    <label id="TLabel" for="T">T</label>
+                    <input id="W" name="W" type="checkbox" />
+                    <label id="WLabel" for="W">W</label>
+                    <input id="Th" name="Th" type="checkbox" />
+                    <label id="ThLabel" for="Th">Th</label>
+                    <input id="F" name="F" type="checkbox" />
+                    <label id="FLabel" for="F">F</label>
+                </tr>
+                <tr>
+                    <td style="text-align:right;"><input id="SubmitButton" type="submit" value="Send Request" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr/>
+    <footer>
+        <address>
+            <h3 align="center">Wherethemeatis Louisville, KY 40245</h3>
+        </address>
+        <h3 align="center">(502)010-0101</h3>
+    </footer>
+</body>
+
+</html>
