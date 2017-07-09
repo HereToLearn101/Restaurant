@@ -4,18 +4,44 @@
 <head>
     <title>Ted Moso - Restaurant Menu</title>
     <style>
-        td.menu {
+        td {
             text-align: center;
             width: 30%;
         }
 
-        table.menu {
-            width: 100%;
+        div.menu {
             background-color: rgb(255, 179, 179); /* or #ffb3b3 */
+        }
+
+        table.foodmenu {
+            width: 100%;
+        }
+
+        table.beveragemenu {
+            /* shorthand for -
+            margin-top: 0
+            margin-bottom: 0
+            margin-left:auto
+            margin-right: auto */
+            margin: 0 auto;
+        }
+
+        td.bitem {
+            text-align: left;
+        }
+
+        td.bprice {
+            text-align: right;
         }
 
         h2.item {
             font-size: 30px;
+        }
+
+        thead tr td {
+            text-align: center;
+            font-size: 60px;
+            /* can be changed with px or % */
         }
     </style>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
@@ -36,40 +62,80 @@
         </table>
     </div>
     <hr/>
-    <div>
-        <table class="menu">
-            <tr>
-                <td class="menu">
-                    <h2 class="item">Burger and Fries</h2>
-                    An American Classic!<br/> Your choice - with or without cheese<br/> Pickle, onion, tomoto and lettuce<br/>                    Served with our famous thick cut french fries<br/> $7.95
-                </td>
-                <td class="menu">
-                    <h2 class="item">Hot Dog and Chips</h2>
-                    A Summber Classic!<br/> Your choice - white or wheat bun<br/> Relish, mustard, and ketchup<br/> Served
-                    with our house-made chips<br/> $7.95
-                </td>
-                <td class="menu">
-                    <h2 class="item">Italian Sausage</h2>
-                    An All-Time Favorite!<br/> Your choice - mild or spicy<br/> Cole Slaw<br/> Served with garlic mashers<br/>                    $7.95
-                </td>
-            </tr>
-            <tr>
-                <td class="menu">
-                    <h2 class="item">Tenderloin Sandwich and Chips</h2>
-                    Really Hits the Spot!<br/> Plain or Sesame Seed Bun<br/> Pickle, onion, tomato, and lettuce<br/> Served
-                    with our house-made chips<br/> $7.95
-                </td>
-                <td class="menu">
-                    <h2 class="item">House Salad</h2>
-                    On the Lighter Side<br/> Your choice - with or without cheese<br/> Iceberg lettuce, tomatoes, peppers<br/>                    Thousand Island or Ranch Dressing<br/> Served with a dinner roll<br/> $7.95
-                </td>
-                <td class="menu">
-                    <h2 class="item">Brisket Sandwich and Fries</h2>
-                    A Taste of Texas!<br/> Smoked Brisket on thick-cut Texas<br/> Toast
-                    <br/> Cole Slaw<br/> Served with our famous thich-cut french fries<br/> $7.95
-                </td>
-            </tr>
-        </table>
+    <div class="menu">
+        <div class="foodmenu">
+            <table class="foodmenu">
+                <thead>
+                    <tr>
+                        <td colspan="3">Food</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2 class="item">Burger and Fries</h2>
+                            An American Classic!<br/> Your choice - with or without cheese<br/> Pickle, onion, tomoto and
+                            lettuce
+                            <br/> Served with our famous thick cut french fries<br/> $7.95
+                        </td>
+                        <td>
+                            <h2 class="item">Hot Dog and Chips</h2>
+                            A Summber Classic!<br/> Your choice - white or wheat bun<br/> Relish, mustard, and ketchup<br/>                            Served with our house-made chips<br/> $7.95
+                        </td>
+                        <td>
+                            <h2 class="item">Italian Sausage</h2>
+                            An All-Time Favorite!<br/> Your choice - mild or spicy<br/> Cole Slaw<br/> Served with garlic
+                            mashers
+                            <br/> $7.95
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="item">Tenderloin Sandwich and Chips</h2>
+                            Really Hits the Spot!<br/> Plain or Sesame Seed Bun<br/> Pickle, onion, tomato, and lettuce<br/>                            Served with our house-made chips<br/> $7.95
+                        </td>
+                        <td>
+                            <h2 class="item">House Salad</h2>
+                            On the Lighter Side<br/> Your choice - with or without cheese<br/> Iceberg lettuce, tomatoes,
+                            peppers
+                            <br/> Thousand Island or Ranch Dressing<br/> Served with a dinner roll<br/> $7.95
+                        </td>
+                        <td>
+                            <h2 class="item">Brisket Sandwich and Fries</h2>
+                            A Taste of Texas!<br/> Smoked Brisket on thick-cut Texas<br/> Toast
+                            <br/> Cole Slaw<br/> Served with our famous thich-cut french fries<br/> $7.95
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="beveragemenu">
+            <table class="beveragemenu">
+                <thead>
+                    <tr>
+                        <td colspan="2">Beverage</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bitem">Root Beer</td>
+                        <td class="bprice">$3.00</td>
+                    </tr>
+                    <tr>
+                        <td class="bitem">Bottled Water</td>
+                        <td class="bprice">$1.25</td>
+                    </tr>
+                    <tr>
+                        <td class="bitem">Lemonade</td>
+                        <td class="bprice">$1.00</td>
+                    </tr>
+                    <tr>
+                        <td class="bitem">Iced Tea</td>
+                        <td class="bprice">$1.25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <hr/>
     <footer>

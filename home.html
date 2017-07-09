@@ -3,28 +3,33 @@
 
 <head>
     <title>Ted Moso - Restaurant Home Page</title>
-    <!--
-        td {
-            width: 30%;
-            text-align: center;
-        }
-        -->
     <style>
         img {
             height: 300px;
             width: 400px;
         }
 
+        /*
         table.description {
             width: 400px;
             height: 250px;
-            padding: 20px;
+            padding-left: 20px;
             border: 1px solid black;
-            margin: 0 auto; /*applying this will move the object centrally within it's parent container*/
+            margin: 0 auto;
+            /*applying this will move the object centrally within it's parent container
+        } */
+
+        div.description {
+            border: 1px solid black;/* border-width, border-style, border-color */
+            width: 30%;
+            margin: 0 auto;/* margin-top: 0, margin-bottom: 0, margin-left: auto, margin-right: auto */
+            padding: 0px;
+            text-align: top;
         }
 
         div.imgdesc {
-            background-color: rgb(255, 179, 179); /* or #ffb3b3 */
+            background-color: rgb(255, 179, 179);
+            /* or #ffb3b3 */
         }
     </style>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
@@ -52,27 +57,25 @@
     <div class="imgdesc">
         <!-- Used inline style for image -->
         <p style="text-align:center"><img src="images/hotdog.jpg" /></p>
+        <!--
         <p>
             <table class="description">
                 <td>
                     Restaurant Description: <br/>
                     <p>Are you a meat guy? Then this is the place for you. We have all the meat that you can think of from high
-                        quality cheap to high quality expensive. Let me ask you something... Do you know what kobe beef is?
-                        And do you know what kobe lobster is? That is, lobster fed with kobe beef! Come try it right now!</p>
+                        quality cheap to high quality expensive. Come try it now!</p>
                 </td>
             </table>
         </p>
-    </div>
-    <!--
-    <div align="center">
-        <div class="description">
-            <p>Restaurant Description</p>
-            <p>Are you a meat guy? Then this is the place for you. We have all the meat that you can think of from high quality
-                cheap to high quality expensive. Let me ask you something... Do you know what kobe beef is? And do you know
-                what kobe lobster is? That is, lobster fed with kobe beef! Come try it right now!</p>
+        -->
+        <div>
+            <div class="description">
+                <p>Restaurant Description</p>
+                <p>Are you a meat guy? Then this is the place for you. We have all the meat that you can think of from high
+                    quality cheap to high quality expensive. Come try it now!</p>
+            </div>
         </div>
     </div>
-    -->
     <hr/>
     <!-- Address and Phone Number -->
     <footer>

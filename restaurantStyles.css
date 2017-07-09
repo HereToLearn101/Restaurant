@@ -12,3 +12,20 @@ td.navigation {
     width: 30%;
     text-align: center;
 }
+
+td a:link {
+    color: rgb(51, 102, 187); /* #3366BB */
+}
+
+td a:visited {
+    color: rgb(102, 51, 102); /* #663366 */
+}
+
+td a:hover {
+    font-weight: bold;
+}
+
+td a:active {
+    color: rgb(11, 0, 128); /* #0B0080 */
+    text-decoration: none;
+}
