@@ -8,7 +8,6 @@
             height: 300px;
             width: 400px;
         }
-
         /*
         table.description {
             width: 400px;
@@ -19,19 +18,28 @@
             /*applying this will move the object centrally within it's parent container
         } */
 
-        div.description {
-            border: 1px solid black;/* border-width, border-style, border-color */
-            width: 30%;
-            margin: 0 auto;/* margin-top: 0, margin-bottom: 0, margin-left: auto, margin-right: auto */
-            padding: 0px;
-            text-align: top;
+        #description {
+            border: 1px solid black;
+            /* border-width, border-style, border-color */
+            width: 80%;
+            margin: 0 auto;
+            /* //margin-top: 0, margin-bottom: 0, margin-left: auto, margin-right: auto */
+            /*padding: 0px;*/
+            /*text-align: top;*/
         }
 
-        div.imgdesc {
+        div.container {
             background-color: rgb(255, 179, 179);
             /* or #ffb3b3 */
         }
     </style>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- -->
+
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -39,41 +47,57 @@
     <!-- Title of the Restaurant -->
     <header>
         <h1>Meat For Men</h1>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h1>Opening New Location!</h1>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
     </header>
-    <!-- <hr> seperates content by creating a horizontal rule -->
-    <hr/>
     <!-- Navigation -->
     <div>
-        <table>
-            <tr>
-                <td class="navigation"><a href="home.html">Home</a></td>
-                <td class="navigation"><a href="menu.html">Menu</a></td>
-                <td class="navigation"><a href="contactUs.html">Contact Us</a></td>
-            </tr>
-        </table>
+
+        <ul class="nav nav-tabs">
+            <li><a href="home.html" class="glyphicon glyphicon-home"></a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+
     </div>
-    <hr/>
-    <!-- Restaurant -->
-    <div class="imgdesc">
-        <!-- Used inline style for image -->
-        <p style="text-align:center"><img src="images/hotdog.jpg" /></p>
-        <!--
-        <p>
-            <table class="description">
-                <td>
-                    Restaurant Description: <br/>
+
+    <!-- Restaurant Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><img src="images/hotdog.jpg" /></div>
+            <div class="col-md-4"></div>
+            <!--
+            <p style="text-align:center"><img src="images/hotdog.jpg" /></p>
+            <div>
+                <div class="description">
+                    <p>Restaurant Description</p>
                     <p>Are you a meat guy? Then this is the place for you. We have all the meat that you can think of from high
                         quality cheap to high quality expensive. Come try it now!</p>
-                </td>
-            </table>
-        </p>
-        -->
-        <div>
-            <div class="description">
-                <p>Restaurant Description</p>
-                <p>Are you a meat guy? Then this is the place for you. We have all the meat that you can think of from high
-                    quality cheap to high quality expensive. Come try it now!</p>
+                </div>
             </div>
+            -->
+        </div>
+        <div class="row">
+            <div class="col-md-12"> </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div id="description">
+                    <p>Restaurant Description</p>
+                    <p>Are you a meat guy? Then this is the place for you. We have all the meat that you can think of from high
+                        quality cheap to high quality expensive. Come try it now!</p>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
     <hr/>

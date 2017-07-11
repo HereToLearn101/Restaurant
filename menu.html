@@ -3,6 +3,7 @@
 
 <head>
     <title>Ted Moso - Restaurant Menu</title>
+    <!--
     <style>
         td {
             text-align: center;
@@ -10,7 +11,8 @@
         }
 
         div.menu {
-            background-color: rgb(255, 179, 179); /* or #ffb3b3 */
+            background-color: rgb(255, 179, 179);
+            /* or #ffb3b3 */
         }
 
         table.foodmenu {
@@ -44,6 +46,29 @@
             /* can be changed with px or % */
         }
     </style>
+    -->
+
+    <style>
+        div.row {
+            text-align: center;
+        }
+
+        h1#food, h1#beverage {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .container {
+            background-color: rgb(255, 179, 179);
+        }
+    </style>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- -->
+
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -51,8 +76,13 @@
     <header>
         <h1>Meat For Men</h1>
     </header>
-    <hr/>
     <div>
+        <ul class="nav nav-tabs">
+            <li><a href="home.html" class="glyphicon glyphicon-home"></a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        <!--
         <table>
             <tr>
                 <td class="navigation"><a href="home.html">Home</a></td>
@@ -60,8 +90,70 @@
                 <td class="navigation"><a href="contactUs.html">Contact Us</a></td>
             </tr>
         </table>
+        -->
     </div>
-    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="food">Food</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="item">Burger and Fries</h2>
+                An American Classic!<br/> Your choice - with or without cheese<br/> Pickle, onion, tomoto and lettuce
+                <br/> Served with our famous thick cut french fries<br/> $7.95
+            </div>
+            <div class="col-md-4">
+                <h2 class="item">Hot Dog and Chips</h2>
+                A Summber Classic!<br/> Your choice - white or wheat bun<br/> Relish, mustard, and ketchup<br/> Served with
+                our house-made chips<br/> $7.95
+            </div>
+            <div class="col-md-4">
+                <h2 class="item">Italian Sausage</h2>
+                An All-Time Favorite!<br/> Your choice - mild or spicy<br/> Cole Slaw<br/> Served with garlic mashers
+                <br/> $7.95
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="item">Tenderloin Sandwich and Chips</h2>
+                Really Hits the Spot!<br/> Plain or Sesame Seed Bun<br/> Pickle, onion, tomato, and lettuce<br/> Served with
+                our house-made chips<br/> $7.95
+            </div>
+            <div class="col-md-4">
+                <h2 class="item">House Salad</h2>
+                On the Lighter Side<br/> Your choice - with or without cheese<br/> Iceberg lettuce, tomatoes, peppers
+                <br/> Thousand Island or Ranch Dressing<br/> Served with a dinner roll<br/> $7.95
+            </div>
+            <div class="col-md-4">
+                <h2 class="item">Brisket Sandwich and Fries</h2>
+                A Taste of Texas!<br/> Smoked Brisket on thick-cut Texas<br/> Toast
+                <br/> Cole Slaw<br/> Served with our famous thich-cut french fries<br/> $7.95
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="beverage">Beverage</h1>
+            </div>
+            <div class="col-md-6">Root Beer</div>
+            <div class="col-md-6">$3.00</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Bottled Water</div>
+            <div class="col-md-6">$1.25</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Lemonade</div>
+            <div class="col-md-6">$1.00</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Iced Tea</div>
+            <div class="col-md-6">$1.25</div>
+        </div>
+    </div>
+
+    <!--
     <div class="menu">
         <div class="foodmenu">
             <table class="foodmenu">
@@ -138,6 +230,7 @@
         </div>
     </div>
     <hr/>
+    -->
     <footer>
         <address>
             <h3>Wherethemeatis Louisville, KY 40245</h3>
