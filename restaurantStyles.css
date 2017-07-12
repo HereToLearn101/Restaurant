@@ -1,4 +1,4 @@
-header, footer {
+header, footer, #carouselContainer {
     text-align: center;
     background-color: rgb(102, 153, 255); /* or #6699ff */
 }
